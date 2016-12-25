@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HomeBrewery</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Empty cache</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehentheit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered (regId = %1$s)!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Server.</string>
+    <string name="server_registered">From Server: successfully added device!</string>
+    <string name="server_unregistered">From Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Server (%1$s).</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+
+    <string name="cancel_menu">Cancel</string>
+    <string name="set_server_url_heathe">Insert Server-Url</string>
+    <string name="not_valid_format">Address not valid</string>
+
+
+    <string name="next">Next</string>
+    <string name="prev">Previous</string>
+    <string name="finish">Create Recipe</string>
+    <string name="review">Review</string>
+
+    <string name="submit_confirm_message">Do you want to create the recipe?</string>
+    <string name="submit_confirm_button">Create recipe</string>
+
+
+    <string name="time_picker_time_seperator">:</string>
+    <string name="hms_picker_hours_label">H</string>
+    <string name="hms_picker_minutes_label">M</string>
+    <string name="hms_picker_seconds_label">S</string>
+    <string name="timer_delete">Delete</string>
+    <string name="picker_cancel">Cancel</string>
+    <string name="picker_set">OK</string>
+    <string name="number_picker_minus_label">—</string>
+    <string name="number_picker_seperator">.</string>
+    <string name="number_delete">Delete</string>
+    <string name="number_picker_plus_minus">+/-</string>
+    <string name="min_error">Please input a number greater than or equal to %1$d</string>
+    <string name="max_error">Please input a number less than or equal to %1$d</string>
+    <string name="min_max_error">Please input a number between %1$d and %2$d</string>
+    <string name="current_brewing_process_title">Aktueller brewing process</string>
+    <string name="add_ingredient_button_text">Add</string>
+    <string name="add_list_button_text">Add</string>
+    <string name="sorte_mashing_floating_label_text">Sort</string>
+    <string name="menge_mashing_floating_label_text">Amount</string>
+    <string name="zeit_mashing_floating_label_text">Time</string>
+    <string name="add_temp_button_text">Add</string>
+    <string name="temperature_floating_label_text">Temperature</string>
+    <string name="duration_floating_label_text">Set duration</string>
+    <string name="server_address_floating_label_text">Server-Address</string>
+    <string name="time_hop_cooking_floating_label_text">Time</string>
+    <string name="amount_hop_cooking_floating_label_text">Amount</string>
+    <string name="sort_hop_cooking_floating_label_text">Sort</string>
+    <string name="ingredient_floating_label_text">Ingredient</string>
+    <string name="update_brewing_process_failed_text">Update failed</string>
+    <string name="brewing_process_updated_text">Brewing process updated</string>
+    <string name="temp_format_string">Temp: %1$.2f°</string>
+    <string name="recipe_load_failed_message">Couldn\'t load recipes</string>
+    <string name="server_url_dialog_positive_text">Connect</string>
+    <string name="server_url_dialog_negative_text">Cancel</string>
+    <string name="protocol_not_loaded_crouton_text">Couldn\'t load protocol</string>
+    <string name="recipe_createad_crouton_text">Recipe created</string>
+    <string name="recipe_not_created_crouton_text">Recipe not created</string>
+    <string name="brewing_process_not_found_exception_text">Couldn\'t start brewing process</string>
+    <string name="brewing_process_started_text">Brewing process started</string>
+    <string name="hop_review_item_title">Hop: </string>
+    <string name="mash_addition_review_item_title">Mash addition: </string>
+    <string name="temp_level_review_item_title">Temperature curve: </string>
+    <string name="mashing_question_recipe_wizard">Mashing?</string>
+    <string name="recipe_wizard_confirm_text">Yes</string>
+    <string name="recipe_wizard_decline">No</string>
+    <string name="recipe_wizard_no_mashing">No mashing</string>
+    <string name="recipe_wizard_hop_cooking">Cooking hop?</string>
+    <string name="recipe_wizard_no_hop_cooking">No hop cooking</string>
+    <string name="recipe_wizard_recipe_name">Name of the recipe</string>
+    <string name="recipe_wizard_recipe_id">Id (filename) of the recipe</string>
+    <string name="recipe_wizard_recipe_desc">Description of the recipe</string>
+    <string name="recipe_wizard_recipe_comments">Comments</string>
+    <string name="no_items_review_adapter_text">(None)</string>
+    <string name="malt_addition_pre_notification_text">In %1$s please add ingredient %2$s (%3$s)</string>
+    <string name="duration_min_format">%s min</string>
+    <string name="iodin_test_notification_title">Iodine test</string>
+    <string name="iodin_test_message_option_yes">Positive</string>
+    <string name="iodin_test_message_option_no">Negative</string>
+    <string name="manual_step_notification_option_confirm">Confirm</string>
+    <string name="manual_step_notification_title">Manual step</string>
+    <string name="alarm_notification_title">Control brewing device</string>
+    <string name="hh_mm_format">HH:mm</string>
+    <string name="degree_format">%1$s°</string>
+    <string name="degree_decimal_format">#.#</string>
+    <string name="iodin_test_dialog_title">Waiting period iodine test</string>
+    <string name="recipe_loading_exception_toast">Couldn\'t load recipes</string>
+    <string name="protocol_loading_exception_toast">Couldn\'t load protocols</string>
+    <string name="page_duration_title">Duration</string>
+    <string name="hop_addition_title">Hop addition:</string>
+    <string name="mash_addition_page_title">Mash addition:</string>
+    <string name="temperature_level_page_title">Temperature level:</string>
+    <string name="time_picker_text">Time</string>
+    <string name="relog_menu_text">Relog</string>
+    <string name="refresh_menu_text">Refresh</string>
+    <string name="protocol_not_loaded_toast">Couldn\'t load protocols</string>
+    
+    <string name="not_started_normal_start_string">brewing process not started yet</string>
+    <string name="not_started_normal_on_going_string">preparing brewing process</string>
+    <string name="not_started_normal_end_string">brewing process started</string>
+    <string name="not_started_request_start_string">Please confirm the start of the brewing processes</string>
+    <string name="not_started_request_on_going_string">Please confirm, that the start of the brewing processes should be continued</string>
+    <string name="not_started_request_end_string">Please confirm, that the brewing process was started</string>
+    <string name="mashing_normal_start_string">Mashing started</string>
+    <string name="mashing_normal_on_going_string">Mashing…</string>
+    <string name="mashing_normal_end_string">Mashing finished</string>
+    <string name="mashing_request_start_string">Please confirm, that the mashing process should be started</string>
+    <string name="mashing_request_on_going_string">Please confirm, that the mashing process should be continued</string>
+    <string name="mashing_request_end_string">Please confirm the end des mashing processs</string>
+    <string name="mashing_request_iodine_string">Please do the iodine test. What is the result?</string>
+    <string name="mashing_normal_iodine_string">Iodine test currently executed</string>
+    <string name="lautering_normal_start_string">lautering started</string>
+    <string name="lautering_normal_end_string">lautering finished</string>
+    <string name="lautering_normal_on_going_string">Lautering</string>
+    <string name="lautering_request_start_string">Please confirm, that the lautering should be started</string>
+    <string name="lautering_request_on_going_string">Please confirm, that the lautering should be continued</string>
+    <string name="lautering_request_end_string">lautering finished</string>
+    <string name="whirlpool_normal_start_string">whirlpool started</string>
+    <string name="whirlpool_normal_on_going_string">whirlpool ongoing</string>
+    <string name="whirlpool_normal_end_string">whirlpool finished</string>
+    <string name="whirlpool_request_start_string">Please confirm, that the whirlpool should be started</string>
+    <string name="whirlpool_request_on_going_string">Please confirm, that the whirlpool should be continued</string>
+    <string name="whirlpool_request_end_string">Please confirm the end of the whirlpool</string>
+    <string name="hop_cooking_normal_start_string">hop cooking started</string>
+    <string name="hop_cooking_normal_on_going_string">Currently hop cooking</string>
+    <string name="hop_cooking_normal_end_string">hop cooking finished</string>
+    <string name="hop_cooking_request_start_string">Please confirm, that the hop cooking should be started</string>
+    <string name="hop_cooking_request_on_going_string">Please confirm, that the hop cooking should be continued</string>
+    <string name="hop_cooking_request_end_string">Please confirm the end of the hop cooking</string>
+    <string name="finished_string">brewing process successful</string>
+
+    <string name="hop_cooking_message_string">Hop cooking</string>
+    <string name="confirmation_request_message_string">Confirmation request</string>
+    <string name="ingredient_addition_message_string">Ingredient addition</string>
+    <string name="iodine_test_message_string">Iodine test</string>
+    <string name="manual_step_message_string">Manual step</string>
+    <string name="pre_notification_message_string">Pre notification</string>
+    <string name="temperature_level_message_string">Temperature level</string>
+    <string name="temperature_message_string">Temperature</string>
+    <string name="mashing_message_string">Mashing</string>
+    <string name="mashing_request_adding_string">Addition: </string>
+    <string name="hop_cooking_request_adding_string">Addition: </string>
+
+</resources>

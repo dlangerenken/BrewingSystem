@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="sans-serif-light"
+            android:textColor="?android:attr/textColorTertiary"
+            android:textSize="12sp"
+            tools:ignore="UnusedAttribute"
+            tools:text="Just now" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/date"
+            android:fontFamily="sans-serif-light"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="15sp"
+            tools:ignore="UnusedAttribute"
+            tools:text="Protocol XY" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:fontFamily="sans-serif-light"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="12sp"
+            tools:ignore="UnusedAttribute"
+            tools:text="Duration: 05:32h, IodineTests: 5" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+

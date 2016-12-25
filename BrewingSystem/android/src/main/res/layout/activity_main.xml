@@ -1,0 +1,51 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:panelHeight="?attr/actionBarSize"
+    sothree:shadowHeight="4dp"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:sothree="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                auto:theme="@style/ActionBar" />
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/main_toolbar"
+                tools:context=".MainActivity"
+                tools:ignore="MergeRootFrame" >
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/crouton_handle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:background="@null" />
+        </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/brewing_steps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top" />
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+

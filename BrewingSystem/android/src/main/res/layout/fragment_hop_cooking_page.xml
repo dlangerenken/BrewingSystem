@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/WizardPageContainer"
+    android:orientation="vertical">
+
+    <TextView style="@style/WizardPageTitle" />
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+            <com.marvinlabs.widget.floatinglabel.edittext.FloatingLabelEditText
+                android:id="@+id/editText_sort"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                app:flw_labelText="@string/sorte_mashing_floating_label_text"
+                app:flw_labelTextColor="@color/app_color_second_alt">
+
+                <requestFocus />
+            </com.marvinlabs.widget.floatinglabel.edittext.FloatingLabelEditText></RelativeLayout>
+
+
+        <custom.picker.FloatingLabelAmountPicker
+            android:id="@+id/editText_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:padding="5dp"
+            android:inputType="numberDecimal"
+            app:flw_labelText="@string/amount_hop_cooking_floating_label_text"
+            app:flw_labelTextColor="@color/app_color_second_alt"/>
+
+        <custom.picker.FloatingLabelHMSPicker
+            android:id="@+id/editText_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="5dp"
+            app:flw_labelText="@string/time_hop_cooking_floating_label_text"
+            app:flw_labelTextColor="@color/app_color_second_alt"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_add"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/add_ingredient_button_text" />
+
+    <ListView
+        android:id="@+id/listView_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

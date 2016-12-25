@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/relog"
+        android:orderInCategory="999"
+        android:title="@string/relog_menu_text" />
+    <item
+        android:id="@+id/refresh"
+        android:orderInCategory="999"
+        android:title="@string/refresh_menu_text" />
+</menu>

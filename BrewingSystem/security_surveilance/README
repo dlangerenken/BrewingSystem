@@ -1,0 +1,2 @@
+Change FILE_PATH in io.h
+compile with "gcc gpio.c io.c connect.c security.c -o security.out"

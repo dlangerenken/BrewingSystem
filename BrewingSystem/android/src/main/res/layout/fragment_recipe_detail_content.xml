@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/beer" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:background="#3c4e342e" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_color_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="UnusedAttribute"
+            tools:text="Just now"
+            android:layout_above="@+id/pager"
+            android:layout_alignEnd="@+id/description" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:textColor="@color/app_color_text"
+            tools:ignore="UnusedAttribute"
+            tools:text="This is a description"
+            android:layout_below="@+id/title"
+            android:layout_above="@+id/date"
+            android:layout_alignParentEnd="true"
+            android:autoText="false" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_toStartOf="@id/date"
+            android:textColor="@color/app_color_text"
+            android:textSize="24sp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            tools:ignore="UnusedAttribute"
+            tools:text="This is the title"
+            android:layout_alignParentEnd="true" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/image"
+            android:minHeight="100dp">
+
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pager_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/app_color_second_alt"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:textColor="#fff" />
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/button_floating_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_action_content_new_beer"
+        app:fab_colorNormal="@color/app_color_second_alt"
+        app:fab_colorPressed="@color/app_color_second" />
+</FrameLayout>
